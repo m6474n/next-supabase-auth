@@ -20,7 +20,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+   <main className="w-full h-screen flex justify-center items-center">
+     <div className="w-[350px] h-[460px] border border-slate-100">
       <h1>User Profile</h1>
       {user ? (
         <>
@@ -32,5 +33,6 @@ export default function Home() {
         <p>Loading user details...</p>
       )}
     </div>
+   </main>
   );
 }
